@@ -1,0 +1,302 @@
+.container {
+    width: 100%;
+}
+.container {
+    width: 100%;
+}
+.header {
+    width: 80%;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    margin: auto;
+    background-color: #D4CEC7;
+    border-bottom: black solid 1px;
+
+}
+.header-trigram {
+    display: none;
+}
+.header-trigram::after {
+    content: '\2630';
+    font-size: 2rem;
+}
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+}
+.header-li {
+    width:  calc(100% / 9);
+    align-self: center;
+    text-align: center;
+}
+.header-picture {
+    background-image: cover;
+    height: 10rem;
+    position: relative;
+    top: 4rem;
+    color: white;
+}
+.header-pictureMobile {
+    display: none;
+}
+.social {
+    position: fixed;
+    left: calc(80% + 3rem);
+    top: 12rem;
+}
+.tiktoc-div , .insta-div {
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+    background-size: contain;
+    opacity: 0.5;
+}
+.insta-div {
+    background-image: url('../img/insta.png');
+}
+.tiktoc-div {
+    background-image: url('../img/tiktoc.jpg');
+}
+.main {
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0 2rem;
+    background-color: #f3efefef;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: black solid 1px;
+}
+.section--last {
+    border: none;
+}
+.section-avatar {
+  display: flex;
+  flex-direction: row;
+}
+.section-img {
+    background-image: cover;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.section-user {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid black;
+}
+.section-titre {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.section-publication {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.section-date {
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+.section-video {
+    margin: 2rem 0;
+}
+.section-comment {
+    margin: auto;
+    width: 80%;
+    padding: 1rem 0;
+}
+.section-icons {
+    display: flex;
+    width: 80%;
+    height: 3rem;
+    justify-content: start;
+}
+.section-commentIco{
+    margin-right: 1rem;
+    background-image: url('https://pixabay.com/get/g4193dc9165146dcb0f96158bcf3feef545d12913f50363ba9cf47d75a8c7ac84d69521dde570ca538284277d284a24907fbedfbd9d4d41f14e5e3dac39bb288fd9187382d21aa63d758d50a2291a4cd5_1280.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+}
+.section-likeIco::after {
+    content: '\1F5A4';
+    font-size: 2rem;
+}
+.section-imgBlog {
+    margin: 2rem 0;
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+}
+.video {
+    width: 100%;
+}
+.footer {
+    width: 80%;
+    margin: auto;
+    border-top: solid 1px gray;
+    background-color: #bcbcbc;
+    padding: 1rem 0 4rem 0;
+    font-size: 1.5rem
+}
+.footer-icoPhone, .footer-icoMail {
+    font-size: 2rem; 
+    margin-right: 2rem;
+}
+.footer-flexAdress {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer-coordonate {
+    display: flex;
+   justify-content: center;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+.footer-phone, .footer-mail {
+    width: 20%;
+}
+.footer-icoPhone::after {
+     content:'\2709';
+    
+}
+.footer-icoMail::after {
+  content:'\260F';
+}
+ .footer-img {
+     margin: auto;
+     height: 4rem;
+     width: 100%;
+ }
+.header-pictureRotate {
+  position: relative;
+  left: calc((50% - (100% / 18)));
+  height: 12rem;
+  opacity: 0.9;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 3rem;
+    margin: auto;
+}
+@media screen and (max-width: 600px) {
+    .header, .main, .footer {
+        width: 100%;
+         margin: none;
+         font-size: 1rem;
+     }
+     .header {
+         padding: 2rem 0;
+       
+     }
+     .header-trigram {
+         display: inherit;
+         width: 10%;
+     }
+     .header-ul {
+         display: none;
+     }
+     .header-trigram:hover + .header-ul {
+         display: flex;
+         flex-direction: column;
+         width: 25%;
+     }
+     .header-li {
+         width: 100%;
+         padding: 0.5rem 0;
+         text-align: left;
+     }
+     .header-picture {
+         display: none;
+     }
+     .header-pictureMobile {
+         display: inherit;
+         width: calc(100% / 9);
+         height: 5rem;
+         position: absolute;
+         top: 1rem;
+         left: calc(50% - (100% / 18) );
+         }
+     .social {
+         transform: rotate(90deg);
+         position:fixed;                
+         left: 70%;
+         top: -2rem;   
+         }
+     .tiktoc-div {
+         transform: rotate(-90deg);
+     }
+     .tiktoc-div , .insta-div {
+         height: 4rem;
+         width: 4rem;
+         margin: 0.5rem;
+         background-size: contain;
+     }
+     .section-user {
+        padding: 2rem 0rem;
+    }
+    .section-publication {
+        text-align: center;
+    }
+    .section-imgBlog {
+        margin: 2rem 0;
+        width: 100%;
+        height: 20rem;
+        background-size: cover;
+    }
+    .video {
+        width: 100%;
+        
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-img {
+        height: 6rem;
+        width: 100%;
+    }
+   .header-pictureRotate {
+     position: relative;
+    top: 0;
+     height: 6rem;
+     opacity: 0.9;
+   }
+   .footer-flexAdress {
+    position:initial;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    }
+
+    .footer-coordonate {
+        display:flex;
+        justify-content: center;
+        margin: auto;
+        width: 1
+    }
+    .footer-nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-link {
+        text-align: center;
+    }
+}
+
